@@ -4,7 +4,7 @@ export function getSiteName(): string {
   }
 
   console.warn("ENV 'SITE_NAME' has no value, using default:", "Web-SyncPlay")
-  return "Web-SyncPlay"
+  return "Based-Sync"
 }
 
 export function getSiteDomain(): string {
@@ -15,9 +15,9 @@ export function getSiteDomain(): string {
 
   console.warn(
     "ENV 'PUBLIC_DOMAIN' has no value, using default:",
-    "https://web-syncplay.de"
+    "https://sync.basedbias.xyz"
   )
-  return "https://web-syncplay.de"
+  return "https://sync.basedbias.xyz"
 }
 
 export function getRedisURL(): string {
