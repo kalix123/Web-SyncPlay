@@ -51,6 +51,8 @@ sure that everyone stays synchronised and there is no feedback loop of commands.
 To run this software on your own hardware, you will need to have [Docker](https://www.docker.com/) or any other
 container engine installed.
 
+> **NOTE** Docker-compose and docker are not working
+
 ### docker-compose
 
 For ease of use there is an
@@ -81,7 +83,12 @@ docker run -d -p 8081:8081 -e REDIS_URL=redis://your-ip:6379 websyncplay/websync
 To get started with running the project directly via node, clone the repository via:
 
 ```bash
-git clone https://github.com/Web-SyncPlay/Web-SyncPlay
+git clone https://github.com/kalix123/Web-SyncPlay
+```
+Install the npm packages with
+
+```bash
+npm install
 ```
 
 When you are trying to develop on the project simply run
