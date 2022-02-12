@@ -1,6 +1,0 @@
-#!/bin/bash
-
-tmux new -d -s syncplay
-tmux send -t syncplay 'npx next start -p 8081' Enter
-
-echo 'syncplay started under tmux session named: syncplay'
