@@ -31,14 +31,14 @@ const PlaylistItem: FC<Props> = ({
 }) => {
   const [edit, setEdit] = useState(false)
   const [title, _setTitle] = useState(item.title || "")
+
   const setTitle = (newTitle: string) => {
     _setTitle(newTitle)
   }
 
   useEffect(() => {
-    if (!edit) {
       setTitle(item.title || "")
-    }
+  
   }, [edit, item.title])
 
   const itemTitle = () => {
@@ -76,15 +76,17 @@ const PlaylistItem: FC<Props> = ({
               <IconDrag />
             </div>
             <div
-              className={"flex grow"}
+              // className={"flex grow"}
+              className={"p-2 pl-1 grow"}
               onMouseEnter={() => setEdit(true)}
               onMouseLeave={() => setEdit(false)}
             >
               {edit ? (
                 <InputText
                   onChange={updateTitle}
-                  placeholder={"Set a title"}
                   value={title}
+                  placeholder={"Set a title"}
+
                 />
               ) : (
                 itemTitle()
