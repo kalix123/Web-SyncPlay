@@ -3,7 +3,7 @@ export function getSiteName(): string {
     return <string>process.env.SITE_NAME
   }
 
-  console.warn("ENV 'SITE_NAME' has no value, using default:", "Web-SyncPlay")
+  console.warn("ENV 'SITE_NAME' has no value, using default:", "Based-Sync")
   return "Based-Sync"
 }
 

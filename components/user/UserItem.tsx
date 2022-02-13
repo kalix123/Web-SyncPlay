@@ -6,6 +6,7 @@ import IconPlay from "../icon/IconPlay"
 import classNames from "classnames"
 import IconOwner from "../icon/IconOwner"
 import InputText from "../input/InputText"
+import Jdenticon from 'react-jdenticon';
 
 interface Props {
   user: UserState
@@ -46,13 +47,8 @@ const UserItem: FC<Props> = ({ user, ownerId, socketId, updateName }) => {
         </div>
       )}
       <div className={"aspect-square shrink-0"}>
-        <img
-          className={"aspect-square h-[64px]"}
-          src={
-            "https://avatars.dicebear.com/api/pixel-art/" + user.uid + ".svg"
-          }
-          alt={"Generated profile picture of " + user.name}
-        />
+      <Jdenticon size="64" value= {user.uid} />
+        
       </div>
       <div
         className={"p-2 pl-1 grow"}
