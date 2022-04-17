@@ -4,11 +4,11 @@
 node_modules/
 /.pnp
 .pnp.js
-package.json
 yarn.lock
 .env
 package-lock.json
 
+/run
 
 # testing
 /coverage
